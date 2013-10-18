@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Welcome to Flickr Jr</h1>
+  <h4>Behold a world of pleasure!</h4><br>
+
+  <ul id="album_menu">
+    <h4>View an album:<h4>
+    <% @albums.each do |album| %>
+      <li><a class="album_name" href="/album"><%= album.title%></a></li><br>
+    <% end %>
+  </ul>
+</div>
